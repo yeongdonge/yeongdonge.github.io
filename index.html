@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap" rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-bottom: 5px; margin-top: 5px;">Dongyeong Kim (Rineau)</h1>
+        <p style="margin-top: 0">Database Administrator</p>
+    </header>
+
+    <section id="about" ; style="padding-bottom: 0px;">
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="image/face.jpg">
+            </div>
+            <div class="contact">
+                <a href="https://velog.io/@parrineau" class="image-link" target="_blank">
+                    <img class="photo_hyper" src="image/velog.png">
+                </a>
+                <a href="https://github.com/yeongdonge" class="image-link" target="_blank">
+                    <img class="photo_hyper" src="image/github.png">
+                </a>
+                <a href="https://open.kakao.com/o/s9MoXLie" class="image-link" target="_blank">
+                    <img class="photo_hyper" src="image/kakao.png">
+                </a>
+            </div>
+            <h3 style="margin-top: 10px">Enjoy positive wandering</h3>
+            <p>
+                <!-- 추가: 경력사항에 대한 내용 -->
+                이름 <b>김동영</b><br>
+                나이 <b>26세</b><br>
+                경력사항 <b>2021. 08 ~ (락플레이스)</b>
+            </p>
+        </div>
+
+        <section id="projects" class="project-grid">
+            <div class="project" style="background-color: #fffcff;">
+                <h3>롯데정보통신 LCLOUD MySQL DBaaS 구축 (2023. 09 ~ )</h3>
+                <p>
+                    #Ansible을 이용한 VPC PaaS MySQL (DBaaS) 구축<br>
+                    #Standalone, ReplicaSet, InnoDB Cluster 제품 지원<br>
+                    #my.cnf 및 사용자 DB 계정, 수정 가능 변수 표준화<br>
+                    #부하테스트(Jmeter)를 통한 다방면 Failover 시나리오 가이드<br>
+                    #Orchestrator, MHA, Keepalived, HAProxy, MySQL Router를 이용한 고가용성 구축<br>
+                    <b>#분리된 네트워크에 따른 Orchestrator 코드 수정 및 <a
+                            href="https://forums.percona.com/t/group-replication-of-percona-for-mysql-in-percona-forked-orchestrator-and-original-orchestrator-was-not-discovered-on-the-web/26245/3"
+                            target="_blank">Orchestrator 버그 제보</a></b><br>
+                    <b>#<a href="https://velog.io/@parrineau/MySQL-Percona-for-MySQL-ReplicaSet-MHA%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0"
+                            target="_blank">ReplicaSet 환경에 맞는 MHA 코드 수정</a></b><br>
+                    -DBMS : MySQL 8.0
+                </p>
+            </div>
+            <div class="project" style="background-color: #fcffff;">
+                <h3>롯데캐피탈 차세대 L-ONE 시스템 구축 프로젝트 (2022. 06 ~ 2023. 06)</h3>
+                <p>
+                    <b>#MySQL 5.6에서 8.0으로 업그레이드 지원 수행</b><br>
+                    #Oracle to MySQL 일부 테이블 이관 지원<br>
+                    #DBMS 관련 문의와 장애 대응에 참여하고, DR 서버 구축 지원 (Replica 설정)<br>
+                    #시스템의 안정성 검증과 보안규정 준수를 위한 지원 수행<br>
+                    #안정성 검증 및 보안규정 준수 지원<br>
+                    -DBMS : MySQL 8.0<br>
+                    -Cluster : Infoscale<br>
+                </p>
+            </div>
+            <div class="project" style="background-color: #fcfffd;">
+                <h3>경찰청 여성안전계 챗봇 프로젝트 (2022.02 ~ 2022.03)</h3>
+                <p>
+                    <b>#저예산 프로젝트 DBMS 담당 미팅 참여</b><br>
+                    #챗봇 외부 협력사 DBMS 문의 지원 수행<br>
+                    #서대문구 경찰청 반상주 지원을 통해 내부 DB 관리 역할 수행<br>
+                    #고가용성 테스트와 장애 대응에 대한 지원 진행<br>
+                    -DBMS : MariaDB 10.6<br>
+                    -HA : Maxscale 2.5
+                </p>
+            </div>
+            <div class="project" style="background-color: #fcfcfc;">
+                <h3>한국투자증권 eFriend Expert(Open API) 프로젝트 (2021. 12 ~ 2022.02)</h3>
+                <p>
+                    #초반 구성 및 DBMS 전체 관리 담당<br>
+                    #DBMS 및 Cluster 관련 문의와 장애 지원 수행<br>
+                    <b>#시스템의 안정성 검증 및 보안규정 준수 지원</b><br>
+                    -DBMS : MySQL 8.0<br>
+                    -Cluster : MHA4MySQL
+                </p>
+            </div>
+        </section>
+    </section>
+    <div id="strengths" class="scroll-fade">
+        <h1 style="font-size: 50px; text-align: center;">안녕하세요, 김동영입니다!</h1>
+        <div class="etc-container">
+            <!-- 그리드 아이템 예시 (반복해서 추가) -->
+            <div class="etc-item">
+                <h3>Certification</h3>
+                <p>
+                    <b>#MySQL 2021 Certified Implementation Specialist</b><br>
+                    (100080756MYSQLOPN2021)<br>
+                    발급기관 Oracle<br>
+                    취득일 2023.07.20<br>
+                    <br>
+                    <b>#AWS Certified Cloud Practitioner</b><br>
+                    (G9G347F1WEE11D5C)<br>
+                    발급기관 AWS<br>
+                    취득일 2023.04.12<br>
+                    <br>
+                    <b>#SQLD</b><br>
+                    (SQLD-041006370)<br>
+                    발급기관 데이터자격검정<br>
+                    취득일 2021.06.25<br>
+                </p>
+            </div>
+            <div class="etc-item">
+                <h3>Work Life</h3>
+                <p>
+                    <b>#`23 하반기 우수사원 선정</b><br>
+                    <a href="https://github.com/yeongdonge/dbHealthCheckBash" target="_blank">Bash Shell을 이용한
+                        MySQL/MariaDB 점검 자동화</a><br>
+                    <b>1년 약 1000시간의 엔지니어 투입 공수 절감 예상효과</b><br>
+                    <br>
+                    <b>#주요 지원 고객사</b><br>
+                    롯데정보통신<br>
+                    KT<br>
+                    신한투자증권<br>
+                    라이나금융<br>
+                    우리은행<br>
+                    한국투자증권<br>
+                    롯데캐피탈<br>
+                    <b>금융권 고객사 위주의 지원</b><br>
+                </p>
+            </div>
+            <div class="etc-item">
+                <h3>Skill Set</h3>
+                <p>
+                    <b>#DBMS</b><br>
+                    <b>MySQL</b><br>
+                    MariaDB<br>
+                    <br>
+                    <b>#Prgramming Language</b><br>
+                    <b>JAVA(Spring JPA)</b><br>
+                    Python<br>
+                    Bash<br>
+                    <br>
+                    <b>#ETC</b><br>
+                    <b>InnDB Cluster</b><br>
+                    <b>MHA</b><br>
+                    MMM<br>
+                    <b>Orchestrator</b><br>
+                    PMM (Grafana)
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+            © 2023 Kim, Dong-Yeong All Rights Reserved.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.style.opacity = '1'; // 페이지 로딩이 완료되면 투명도를 1로 변경하여 나타남
+        };
+        $(window).scroll(function () {
+            $(".scroll-fade").each(function () {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+
+                // 스크롤 위치에 따라 클래스 추가/제거
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass("fade-in");
+                } else {
+                    $(this).removeClass("fade-in");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        font-family: "Noto Sans KR", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        padding-bottom: 50px;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 5px;
+        margin-top: 60px;
+    }
+
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .project {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .projects-label {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .about-content {
+        flex: 1;
+        max-width: 60%;
+        margin-top: 62px;
+        margin-left: 70px;
+    }
+
+    .profile-image {
+        flex: 1;
+        max-width: 75%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .profile-image img {
+        max-width: 100%;
+        margin-right: auto;
+    }
+
+    .image-link {
+        text-decoration: none;
+    }
+
+    .photo_hyper {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    .etc-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* 그리드 간격 조절 */
+        padding: 20px;
+        /* 그리드 내부 여백 조절 */
+    }
+
+    .etc-item {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+    }
+
+    #projects p {
+        line-height: 30px;
+    }
+
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 10px 0;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+    }
+
+    .scroll-fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+        padding-top: 0;
+    }
+
+    .scroll-fade.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        padding-top: 0;
+    }
+
+    #strengths,
+    #experience {
+        margin-bottom: 50px;
+    }
+</style>
