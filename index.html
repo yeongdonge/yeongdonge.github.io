@@ -36,9 +36,16 @@
                 <!-- 추가: 경력사항에 대한 내용 -->
                 이름 <b>김동영</b><br>
                 나이 <b>27세</b><br>
-                경력사항 <b>2021. 08 ~ (락플레이스)</b>
+                경력사항<br>
+                <b>2021. 08 ~ 2024. 03(락플레이스)</b><br>
+                <b>2024. 04 ~ (디셈버앤컴퍼니)</b>
             </p>
         </div>
+        <section id="single-project" class="single-box">
+            <div class="project-item">
+                <h2>Rockplace careers (Database Engineer.)</h2>
+            </div>
+        </section>
 
         <section id="projects" class="project-grid">
             <div class="project" style="background-color: #fffcff;">
@@ -49,11 +56,11 @@
                     #my.cnf 및 사용자 DB 계정, 수정 가능 변수 표준화<br>
                     #부하테스트(Jmeter)를 통한 다방면 Failover 시나리오 가이드<br>
                     #Orchestrator, MHA, Keepalived, HAProxy, MySQL Router를 이용한 고가용성 구축<br>
-                    <b>#분리된 네트워크에 따른 Orchestrator 코드 수정 및 <a
+                    <b>#분리된 네트워크에 따른 Orchestrator 코드 수정(Go lang) 및 <a
                             href="https://forums.percona.com/t/group-replication-of-percona-for-mysql-in-percona-forked-orchestrator-and-original-orchestrator-was-not-discovered-on-the-web/26245/3"
                             target="_blank">Orchestrator 버그 제보</a></b><br>(Percona Orchestrator 정식 반영)<br>
                     <b>#<a href="https://velog.io/@parrineau/MySQL-Percona-for-MySQL-ReplicaSet-MHA%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0"
-                            target="_blank">ReplicaSet 환경에 맞는 MHA 코드 수정</a></b><br>
+                            target="_blank">ReplicaSet 환경에 맞는 MHA 코드 수정(Perl)</a></b><br>
                     -DBMS : MySQL 8.0
                 </p>
             </div>
@@ -91,12 +98,48 @@
                 </p>
             </div>
         </section>
+        <section id="single-project" class="single-box">
+            <div class="project-item">
+                <h2>December & Company careers (Database Administrator.)</h2>
+            </div>
+        </section>
+
+        <section id="projects" class="project-grid">
+            <div class="project" style="background-color: #fffcff;">
+                <h3>디셈버앤컴퍼니 전사 DB 단독 관리</h3>
+                <p>
+                    #Fint App 메인 서비스 (PostgreSQL, PgPool-II)<br>
+                    #Fint 증권사 연계 주문, 원장 (PostgreSQL, Pgpool-II)<br>
+                    #Fint Pay 선불전자지급 서비스 (MariaDB, Maxscale)<br>
+                    #AML(자금세탁방지) (MySQL, MHA)<br>
+                    #Datawarehouse (PostgreSQL, Citus)<br>
+                    #Fint Blog (MySQL, RDS)<br>
+                </p>
+            </div>
+            <div class="project" style="background-color: #fffcff;">
+                <h3>Grafana + Telegraf 모니터링</h3>
+                <img style="width: 100%;" src="image/slack.png">
+            </div>
+        </section>
+        <section id="projects" class="project-grid-2">
+            <div class="project" style="background-color: #fcffff;">
+                <h3>개발자 DDL 검수 및 최적화</h3>
+                <img style="width: 100%;" src="image/ddl.png">
+            </div>
+            <div class="project" style="background-color: #fcfffd;">
+                <h3>개인정보보호 정책 데이터 암호화</h3>
+                <img style="width: 100%;" src="image/security.png">
+            </div>
+            <div class="project" style="background-color: #fcfcfc;">
+                <h3>Query Tuning <i>(99% 이상 코스트 감소, 14,000 -> 40)</i></h3>
+                <img style="width: 100%;" src="image/cpu_usage.png">
+            </div>
+        </section>
     </section>
     <h1 style="font-size: 50px; text-align: center; margin: 0 auto;">▼</h1>
     <div id="strengths" class="scroll-fade">
         <h1 style="font-size: 50px; text-align: center;">안녕하세요, 김동영입니다!</h1>
         <div class="etc-container">
-            <!-- 그리드 아이템 예시 (반복해서 추가) -->
             <div class="etc-item">
                 <h3>Certification</h3>
                 <p>
@@ -140,6 +183,7 @@
                 <p>
                     <b>#DBMS</b><br>
                     <b>MySQL</b><br>
+                    <b>PostgreSQL</b><br>
                     MariaDB<br>
                     <br>
                     <b>#Prgramming Language</b><br>
@@ -151,8 +195,10 @@
                     <b>InnoDB Cluster</b><br>
                     <b>MHA</b><br>
                     MMM<br>
+                    PgPool-II<br>
+                    Repmgr<br>
                     <b>Orchestrator</b><br>
-                    PMM (Grafana)
+                    Grafana
                 </p>
             </div>
         </div>
@@ -160,8 +206,8 @@
     <footer>
         <p>
             본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
-            © 2023 Kim, Dong-Yeong All Rights Reserved.<br>
-            PC 화면에 최적화되어 있습니다.
+            © 2024 Kim, Dong-Yeong All Rights Reserved.<br>
+            PC 화면(1920x1080 이상)에 최적화되어 있습니다.
         </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -217,7 +263,7 @@
     section {
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
+        padding-top: 0px;
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 5px;
@@ -229,8 +275,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
+
+    .project-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 0px;
+    }
+
 
     .project {
         padding: 20px;
@@ -238,6 +292,7 @@
         border-radius: 10px;
         background-color: #f0f0f0;
     }
+
 
     .projects-label {
         text-align: center;
@@ -273,6 +328,7 @@
         display: inline-block;
         border-radius: 50%;
     }
+
 
     .etc-container {
         display: grid;
@@ -317,6 +373,30 @@
         transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
         padding-top: 0;
     }
+
+    .single-box {
+        display: flex;
+        /* flexbox 사용 */
+        /* justify-content: center; */
+        /* 중앙 정렬 */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section#about {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #single-project {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
 
     .scroll-fade.fade-in {
         opacity: 1;
