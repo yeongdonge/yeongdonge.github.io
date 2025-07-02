@@ -34,16 +34,43 @@
             <h3 style="margin-top: 10px">Enjoy positive wandering</h3>
             <p>
                 <!-- 추가: 경력사항에 대한 내용 -->
-                이름 <b>김동영</b><br>
-                나이 <b>27세</b><br>
-                경력사항<br>
-                <b>2021. 08 ~ 2024. 03(락플레이스)</b><br>
-                <b>2024. 04 ~ (디셈버앤컴퍼니)</b>
+                <table style="margin-top:5px; text-align:left; width:auto;">
+                  <tr>
+                    <td style="min-width:80px; font-weight:bold;">이름</td>
+                    <td>김동영</td>
+                  </tr>
+                  <tr>
+                    <td style="min-width:80px; font-weight:bold;">나이</td>
+                    <td>27세</td>
+                  </tr>
+                  <tr><td colspan="2" style="height:8px;"></td></tr>
+                  <tr>
+                    <td colspan="2"><hr style="border:0; border-top:1.5px solid #bbb; margin:8px 0;"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align:center; font-weight:bold;">경력사항</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <table style="text-align:left; width:auto; margin:0 auto;">
+                        <tr>
+                          <td style="min-width:120px;">락플레이스</td>
+                          <td>2021. 08 ~ 2024. 03</td>
+                        </tr>
+                        <tr>
+                          <td style="min-width:120px;">디셈버앤컴퍼니</td>
+                          <td>2024. 04 ~ 2025. 02</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
             </p>
         </div>
         <section id="single-project" class="single-box">
-            <div class="project-item">
-                <h2>Rockplace careers (Database Engineer.)</h2>
+            <div class="project-item" style="display: flex; flex-direction: column; align-items: center;">
+                <img style="width: 100px; vertical-align:middle; display: block; margin: 0 auto;" src="image/rockplace.png">
+                <h2 style="text-align: center;">Rockplace careers (Database Engineer.)</h2>
             </div>
         </section>
 
@@ -99,11 +126,11 @@
             </div>
         </section>
         <section id="single-project" class="single-box">
-            <div class="project-item">
-                <h2>December & Company careers (Database Administrator.)</h2>
+            <div class="project-item" style="display: flex; flex-direction: column; align-items: center; min-height: 140px; justify-content: center;">
+                <img style="width: 100px; max-height: 100px; object-fit: contain; display: block; margin: 0 auto;" src="image/fint.png">
+                <h2 style="text-align: center;">December & Company careers (Database Administrator.)</h2>
             </div>
         </section>
-
         <section id="projects" class="project-grid">
             <div class="project" style="background-color: #fffcff;">
                 <h3>디셈버앤컴퍼니 전사 DB 단독 관리</h3>
@@ -114,14 +141,14 @@
                     #AML(자금세탁방지) (MySQL, MHA)<br>
                     #Datawarehouse (PostgreSQL, Citus)<br>
                     #Fint Blog (MySQL, RDS)<br>
+                    <b>#<a href="https://www.pgpool.net/pipermail/pgpool-general/2024-November/009269.html"
+                    target="_blank">PostgreSQL PGPOOL-II 버그 공식 제보 및 반영(4.2.20)</a></b><br>
                 </p>
             </div>
             <div class="project" style="background-color: #fffcff;">
                 <h3>Grafana + Telegraf 모니터링</h3>
                 <img style="width: 100%;" src="image/slack.png">
             </div>
-        </section>
-        <section id="projects" class="project-grid-2">
             <div class="project" style="background-color: #fcffff;">
                 <h3>개발자 DDL 검수 및 최적화</h3>
                 <img style="width: 100%;" src="image/ddl.png">
@@ -130,6 +157,8 @@
                 <h3>개인정보보호 정책 데이터 암호화</h3>
                 <img style="width: 100%;" src="image/enc.png">
             </div>
+        </section>
+        <section id="projects" class="project-grid-2">
             <div class="project" style="background-color: #fcfcfc;">
                 <h3>Query Tuning <i>(99% 이상 코스트 감소, 14,000 -> 40)</i></h3>
                 <img style="width: 100%;" src="image/cpu_usage.png">
@@ -279,18 +308,30 @@
     }
 
     .project-grid-2 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 0px;
+    }
+
+    .project-grid-2 .project {
+        width: 1304px;
+        height: 392px;
+        box-sizing: border-box;
     }
 
 
     .project {
+        width: 642px;
+        height: 392px;
         padding: 20px;
         border: 1px solid #ddd;
         border-radius: 10px;
         background-color: #f0f0f0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
 
